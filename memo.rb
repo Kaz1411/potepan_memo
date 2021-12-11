@@ -22,8 +22,8 @@ if memo_type == "1"
  #CSVファイルの書き込み
  CSV.open("#{file_name}.csv","w") do |csv|
   csv << ["#{content}"]
- end
-
+ 
+end
 #2(メモを編集)
 elsif memo_type == "2"
   puts "編集したいファイル名を拡張子を除いて記入してください"
@@ -40,6 +40,5 @@ elsif memo_type == "2"
   CSV.open("#{file_name}.csv","a") do |csv|
    csv << ["#{edit}"]
   end
-
-　
+  
 end
